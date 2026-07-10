@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOINK — Dashboard</title>
+  <meta name="description" content="YOINK: download video & audio dari TikTok, Instagram, Pinterest, Spotify, YouTube, dan CapCut tanpa watermark. Gratis, tanpa install apapun.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800;900&family=JetBrains+Mono:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <span class="deco deco-star d1"></span>
+  <span class="deco deco-circle d2"></span>
+  <span class="deco deco-tri d3"></span>
+  <span class="deco deco-square d4"></span>
+  <span class="deco deco-diamond d5"></span>
+  <span class="deco deco-hex d6"></span>
+  <span class="deco deco-star d7"></span>
+  <span class="deco deco-circle d8"></span>
+  <span class="deco deco-tri d9"></span>
+  <span class="deco deco-square d10"></span>
+  <span class="deco deco-diamond d11"></span>
+  <span class="deco deco-hex d12"></span>
+  <span class="deco deco-ring d13"></span>
+  <span class="deco deco-plus d14">+</span>
+  <span class="deco deco-ring d15"></span>
+
+  <div class="topbar">
+    <a class='logo-wrap' data-nav href='/'>
+      <span class="logo-shadow-chip"></span>
+      <span class="logo">YOINK</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <span class="badge"><span class="ping"></span>tanpa watermark</span>
+      <div class="nav-wrap">
+        <div class="hamburger" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <a class='active-menu' data-nav href='/'>Dashboard <span class="nav-badge">beranda</span></a>
+          <div class="nav-group"><div class="nav-group-label">Semua Platform</div>
+            <a data-nav href='/aio'>AIO &mdash; All In One <span class="nav-badge">semua platform</span></a>
+          </div>
+          <div class="nav-group"><div class="nav-group-label">Sosial Media</div>
+            <a data-nav href='/tiktok'>TikTok <span class="nav-badge">video</span></a>
+            <a data-nav href='/pinterest'>Pinterest <span class="nav-badge red">pin</span></a>
+          </div>
+          <div class="nav-group"><div class="nav-group-label">Musik & Audio</div>
+            <a data-nav href='/spotify'>Spotify <span class="nav-badge green">track</span></a>
+            <a data-nav href='/ytmp3'>YouTube MP3 <span class="nav-badge purple">audio</span></a>
+          </div>
+          <div class="nav-group"><div class="nav-group-label">Video</div>
+            <a data-nav href='/ytmp4'>YouTube MP4 <span class="nav-badge">video</span></a>
+            <a data-nav href='/ytshorts'>YouTube Shorts <span class="nav-badge">shorts</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Satu tempat, <br><span>semua downloader</span></h1>
+    <p>YOINK ngambilin video, gambar, dan audio dari platform favoritmu tanpa watermark. Tempel link, klik Ambil, selesai. Gak perlu install aplikasi apapun.</p>
+    <div class="hero-tags">
+      <span class="tag">8 platform</span>
+      <span class="tag">gratis, tanpa batas</span>
+      <span class="tag">tanpa watermark</span>
+      <span class="tag">tanpa login</span>
+      <span class="tag">langsung dari browser</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-card"><span class="stat-live-dot"></span><span class="stat-num" id="statOnline">&mdash;</span><span class="stat-label">lagi online sekarang</span></div>
+    <div class="stat-card"><span class="stat-num" id="statToday">&mdash;</span><span class="stat-label">diunduh hari ini</span></div>
+    <div class="stat-card"><span class="stat-num">~2.8s</span><span class="stat-label">rata-rata proses</span></div>
+    <div class="stat-card"><span class="stat-num" id="statTotal">&mdash;</span><span class="stat-label">total semua unduhan</span></div>
+  </div>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <span class="ticker-dot"></span>
+    <span class="ticker-text" id="tickerText">baru aja: seseorang ambil video tanpa watermark</span>
+  </div>
+
+  <!-- PLATFORM GRID -->
+  <div class="dash-section">
+    <h2>Pilih platform</h2>
+    <div class="dash-grid">
+      <a class='dash-card' data-nav href='/tiktok'>
+        <div class="dc-top"><h3>TikTok</h3><span class="dc-icon">TT</span></div>
+        <p>Video tanpa watermark, plus versi dengan watermark kalau butuh.</p>
+      </a>
+      <a class='dash-card' data-nav href='/aio'>
+        <div class="dc-top"><h3>AIO</h3><span class="dc-icon">AIO</span></div>
+        <p>Satu kolom link buat semua platform — TikTok, IG, Twitter/X, FB, dan lainnya.</p>
+      </a>
+      <a class='dash-card' data-nav href='/pinterest'>
+        <div class="dc-top"><h3>Pinterest</h3><span class="dc-icon">PIN</span></div>
+        <p>Gambar atau video Pin, kualitas asli.</p>
+      </a>
+      <a class='dash-card' data-nav href='/spotify'>
+        <div class="dc-top"><h3>Spotify</h3><span class="dc-icon">SP</span></div>
+        <p>Konversi track jadi MP3 buat dengerin offline.</p>
+      </a>
+      <a class='dash-card' data-nav href='/ytmp3'>
+        <div class="dc-top"><h3>YouTube MP3</h3><span class="dc-icon">MP3</span></div>
+        <p>Ambil audio-nya aja dari video YouTube apapun.</p>
+      </a>
+      <a class='dash-card' data-nav href='/ytmp4'>
+        <div class="dc-top"><h3>YouTube MP4</h3><span class="dc-icon">MP4</span></div>
+        <p>Video YouTube kualitas HD, siap ditonton offline.</p>
+      </a>
+      <a class='dash-card' data-nav href='/ytshorts'>
+        <div class="dc-top"><h3>YouTube Shorts</h3><span class="dc-icon">YTS</span></div>
+        <p>Video pendek tanpa watermark.</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="dash-section">
+    <h2>Cara pakai</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <h4>Pilih platform</h4>
+          <p>Buka menu (ikon garis tiga di kanan atas) atau klik salah satu kartu di atas.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <h4>Tempel link</h4>
+          <p>Salin link dari tombol share di aplikasi asalnya, lalu tempel ke kolom input.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <h4>Klik Ambil</h4>
+          <p>YOINK memproses link-nya dan menampilkan preview beserta tombol download.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <h4>Download</h4>
+          <p>Klik tombol download yang muncul — file langsung tersimpan ke perangkatmu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="dash-section">
+    <h2>Tentang YOINK</h2>
+    <div class="card" style="margin-bottom:0;" data-badge="&#8505; INFO">
+      <p style="font-size:15px; line-height:1.7; opacity:.85; font-weight:500;">
+        YOINK adalah situs downloader gratis yang bantu kamu menyimpan video, gambar, dan audio dari berbagai platform sosial media tanpa watermark dan tanpa perlu install aplikasi tambahan. Semua proses jalan langsung dari browser — tinggal tempel link, klik Ambil, dan file siap diunduh.
+        Gunakan secukupnya dan hormati hak cipta pemilik konten asli.
+      </p>
+    </div>
+  </div>
+
+  <!-- DEVELOPER -->
+  <div class="dev-card">
+    <h2>Developer</h2>
+    <p>Dibuat &amp; dikelola solo. Ikuti update, request fitur, atau laporin bug lewat sosial media di bawah.</p>
+    <div class="dev-links">
+      <a class="wa" href="https://whatsapp.com/channel/0029VbD9rcnB4hdIw6JKcp1P" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+      <a class="yt" href="https://youtube.com/@yunnotdev" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a class="tt" href="https://tiktok.com/@mzaidie" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a class="tg" href="https://t.me/q_sra" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </div>
+  </div>
+
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
